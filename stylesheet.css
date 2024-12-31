@@ -1,0 +1,94 @@
+* {
+    margin: 0; /* Removes default margin for all elements */
+    padding: 0; /* Removes default padding for all elements */
+}
+html, body {
+    background-color: #cdc97e; /* Sets a light background color */
+    height: 100%; /* Ensures the body covers the full viewport height */
+}
+.backgroundImage {
+    background-image: url("Images/holiday.webp"); /* Applies a background image */
+    width: 100%; /* Sets full width */
+    height: 100vh; /* Sets full height of the viewport */
+    background-repeat: no-repeat; /* Prevents image repetition */
+    background-size: cover; /* Scales image to cover the container */
+}
+.title {
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: column; /* Stacks elements vertically */
+    align-items: flex-start; /* Aligns items to the start */
+    padding: 24px; /* Adds space inside the container */
+    width: fit-content; /* Adapts width to content */
+    gap: 8px; /* Adds space between child elements */
+}
+.threeMotos {
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: row; /* Aligns items horizontally */
+    align-items: center; /* Vertically aligns items */
+    width: 100%; /* Stretches to full width */
+    justify-content: space-between; /* Adds equal space between items */
+}
+.moto {
+    border-bottom: 1px solid whitesmoke; /* Adds a bottom border */
+    border-top: 1px solid whitesmoke; /* Adds a top border */
+    padding: 4px 8px; /* Adds space inside the element */
+}
+.info {
+    width: 700px; /* Sets fixed width of the pentagon */
+    height: 400px; /* Sets fixed height of the pentagon */
+    background-color: #72a1cba5; /* Adds a semi-transparent background color */
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%); /* Clips the div into a pentagon shape */
+    margin-top: 24px; /* Adds space above the pentagon */
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: row; /* Aligns items horizontally */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    padding: 16px; /* Adds padding inside the pentagon */
+    box-sizing: border-box; /* Ensures padding is included in dimensions */
+    gap: 24px; /* Adds space between child elements */
+}
+.ads {
+    padding: 24px 0px 0px 24px; /* Adds space around the ads text */
+    text-shadow: 1px 1px black; /* Adds a shadow to the text */
+}
+.offers {
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: column; /* Stacks elements vertically */
+    justify-content: flex-start; /* Aligns items at the top */
+    gap: 16px; /* Adds space between child elements */
+    width: 90%; /* Restricts width to 90% of the container */
+    overflow-wrap: break-word; /* Prevents long text from overflowing */
+    text-shadow: 1px 1px black; /* Adds a shadow to the text */
+}
+.buttons {
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: row; /* Aligns buttons horizontally */
+    align-items: flex-start; /* Aligns buttons to the top */
+    gap: 16px; /* Adds space between buttons */
+}
+.btn {
+    padding: 8px 24px; /* Adds space inside the button */
+    border-radius: 8px; /* Rounds the corners */
+    border: 1px solid #daf1fc; /* Adds a border */
+    transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+.btnOffer:hover {
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    background-color: #14213d; /* Changes background color on hover */
+    color: #daf1fc; /* Changes text color on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Adds shadow on hover */
+}
+.btnOffer {
+    background-color: #8ecae6; /* Default background color */
+    color: #303030; /* Default text color */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Default shadow */
+}
+.btnContact {
+    background-color: transparent; /* Transparent background */
+}
+.btnContact:hover {
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    background-color: #daf1fc; /* Changes background color on hover */
+    color: #14213d; /* Changes text color on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Adds shadow on hover */
+}
